@@ -39,7 +39,6 @@ async def index():
 @app.get("/train")
 async def train_route():
     try:
-
         train_pipeline = TrainPipeline()
         if train_pipeline.is_pipeline_running:
             return Response("Training pipeline is already running.")
@@ -80,6 +79,5 @@ def main():
 
 
 if __name__=="__main__":
-    main()
-    # set_env_variable(env_file_path)
-    # app_run(app, host=APP_HOST, port=APP_PORT)
+    # main()
+    app_run(app, host=APP_HOST, port=APP_PORT)
