@@ -1,2 +1,2 @@
-TRAINING_BUCKET_NAME = "sensor-project-storage"
+TRAINING_BUCKET_NAME = "sensor-fraud-pipeline"
 PREDICTION_BUCKET_NAME = ""
